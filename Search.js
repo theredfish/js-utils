@@ -19,7 +19,6 @@ BinarySearch = {
 			return -1;
 
 		var middle = Math.floor((start + end) / 2);
-		console.log('middle : ' + middle);
 		var result = Compare.strcmp(text, array[middle]);
 
 		if (result === 0)
