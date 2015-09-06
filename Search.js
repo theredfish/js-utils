@@ -10,18 +10,17 @@ BinarySearch = {
 		 * Example : arr = ['éalors', 'mach', 'truc'].sort();
 		 * BinarySearch.recursiveSearchByString('mach', arr, 0, arr.length) returns 0 : 0
 		 *
-		 * @param  {string} text wich represents the search item
+		 * @param  {string} value wich represents the search item
 		 * @param  {array} array should be sorted
 		 * @return {integer} index of the element if found, else -1
 		 */
-		recursiveSearchByString: function(text, array, start, end)
+		recursiveSearchByString: function(value, array, start, end)
 		{
 			if (end < start)
 				return -1;
 
 			var middle = Math.floor((start + end) / 2);
-			console.log('middle : ' + middle);
-			var result = Compare.strcmp(text, array[middle]);
+			var result = Compare.strcmp(value, array[middle]);
 
 			if (result === 0)
 				return middle;
