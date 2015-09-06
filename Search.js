@@ -1,6 +1,6 @@
 /**
  * Search elements by using binary search algorithm
- * Compare util is required for recursiveSearchByString()
+ * Compare util is required
  */
 BinarySearch = {
 	array: {
@@ -8,7 +8,7 @@ BinarySearch = {
 		 * Recursive binary search
 		 *
 		 * Example : arr = ['éalors', 'mach', 'truc'].sort();
-		 * BinarySearch.recursiveSearchByString('mach', arr, 0, arr.length) returns 0 : 0
+		 * BinarySearch.array.recursiveSearchByString('mach', arr, 0, arr.length) returns 0 : 0
 		 *
 		 * @param  {string} value wich represents the search item
 		 * @param  {array} array should be sorted
@@ -29,7 +29,7 @@ BinarySearch = {
 			else
 				start = middle + 1;
 
-			return BinarySearch.recursiveSearchByString(text, array, start, end);
+			return BinarySearch.array.recursiveSearchByString(value, array, start, end);
 		}
 	}
 };
